@@ -1,4 +1,4 @@
-# Data Analysis for Fundamental Sciences (Spring 2024, MAT388E)
+# Data Analysis for Fundamental Sciences
 
 * Atabey Kaygun [(kaygun\@itu.edu.tr)](mailto:kaygun@itu.edu.tr)
 * Lectures: Tuesdays 14:30-17:30 (D106)
