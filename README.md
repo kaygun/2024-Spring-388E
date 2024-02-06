@@ -18,9 +18,9 @@ Data science spans an interdisciplinary landscape positioned at the intersection
 
 The books I listed are mostly theoretical. But for the computational homeworks you may need the following:
 
-1. A. Müller and S. Guido *Introduction to Machine Learning with Python: A Guide for Data Scientists 1st Edition*.
-2. A. Geron. *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow Concepts, Tools, and Techniques to Build Intelligent Systems*
-2. J. VanderPlas, *Python Data Science Handbook*.
+- A. Müller and S. Guido *Introduction to Machine Learning with Python: A Guide for Data Scientists 1st Edition*.
+- A. Geron. *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow Concepts, Tools, and Techniques to Build Intelligent Systems*
+- J. VanderPlas, *Python Data Science Handbook*.
 
 Also, there are excellent resources on the web. I would recommend:
 
@@ -30,12 +30,14 @@ Also, there are excellent resources on the web. I would recommend:
 
 ## A sample of data sources
 
-* [UCI datasets](https://archive.ics.uci.edu/ml/datasets.php)
+* [UCI datasets](https://archive.ics.uci.edu/datasets)
 * [Google dataset explorer](https://www.google.com/publicdata/directory)
 * [Registry of open datasets on AWS](https://registry.opendata.aws/)
 * [Open MRI, MEG, EEG, iEEG, and ECoG data](https://openneuro.org/)
+* [Open physiological datasets](https://docs.google.com/spreadsheets/d/1ejOJTNTL5ApCuGTUciV0REEEAqvhI2Rd2FCoj7afops/edit#gid=0)
 * [NCBI datasets](https://www.ncbi.nlm.nih.gov/datasets/)
-* [Open GIS data](https://www.usgs.gov/products/data-and-tools/gis-data)
+* [USGS datasets](https://www.usgs.gov/products/data/)
+* [Global climate data](https://en.tutiempo.net/climate)
 * [NASDAQ data](https://data.nasdaq.com/search)
 
 ## Technical Requirements
