@@ -12,9 +12,9 @@ Data science spans an interdisciplinary landscape positioned at the intersection
 
 The following books are freely available on the web.
 
-* T. Hastie, R. Tibshirani, and J. Friedman.  *The Elements of Statistical Learning.* 
-* M. P. Deisenroth, A. A. Faisal, and C. S. Ong. *Mathematics For Machine Learning*. 
-* I. Goodfellow, Y. Bengio, and A. Courville. *Deep Learning*. 
+* T. Hastie, R. Tibshirani, and J. Friedman.  [*The Elements of Statistical Learning.*](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
+* M. P. Deisenroth, A. A. Faisal, and C. S. Ong. [*Mathematics For Machine Learning*.](https://mml-book.github.io/book/mml-book.pdf)
+* I. Goodfellow, Y. Bengio, and A. Courville. [*Deep Learning*.](https://www.deeplearningbook.org/)
 
 ## Other resources
 
