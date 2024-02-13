@@ -1,5 +1,5 @@
 ---
-title: Math 381E
+title: Math 388E
 author: Atabey Kaygun
 date: Tuesday, February 13, 2024
 incremental: true
@@ -19,7 +19,6 @@ A *hands-on* practical introduction to machine learning algorithms.
 - regression algorithms,
 - neural networks and related subjects.
 
-
 ### Objectives
 
 - to understand the fundamental concepts and algorithms
@@ -27,6 +26,22 @@ A *hands-on* practical introduction to machine learning algorithms.
 - to gain practical know-how on basic ML algorithms
 - to learn how to apply ML algorithms to problems
 - to learn how to analyze results
+
+### Books
+
+The following books are freely available on the web.
+
+* T. Hastie, R. Tibshirani, and J. Friedman.  [*The Elements of Statistical Learning.*](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
+* M. P. Deisenroth, A. A. Faisal, and C. S. Ong. [*Mathematics For Machine Learning*.](https://mml-book.github.io/book/mml-book.pdf)
+* I. Goodfellow, Y. Bengio, and A. Courville. [*Deep Learning*.](https://www.deeplearningbook.org/)
+
+### Other resources
+
+For the computational homeworks you may need the following:
+
+- A. Müller and S. Guido *Introduction to Machine Learning with Python: A Guide for Data Scientists 1st Edition*.
+- A. Geron. *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow Concepts, Tools, and Techniques to Build Intelligent Systems*
+- J. VanderPlas, *Python Data Science Handbook*.
 
 ### Who am I?
 
@@ -46,6 +61,14 @@ Originally theoretical math (algebra) turned data analyst by demand
 - 4 homework projects 
 - final proposal (1500 words)
 - final project (5000 words)
+
+### Homeworks
+
+- 4 homework projects
+- each HW will have 4-5 questions
+- contains both coding and analysis
+- submit via github 
+- deadline date at 11:59PM
 
 ### The Final Proposal
 

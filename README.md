@@ -78,8 +78,8 @@ If you receive 0 (missing HWs are graded as 0) any 2 of the homeworks, or if you
 | Homework 1                 | March 5  | 10%    |
 | Homework 2                 | March 26 | 10%    |
 | **Final Project Proposal** | Apr 2    | 15%    |
-| Homework 3                 | Apr 9    | 10%    |
-| Homework 4                 | Apr 30   | 10%    |
+| Homework 3                 | Apr 16   | 10%    |
+| Homework 4                 | May 6    | 10%    |
 | **Final Project**          | May 28   | 40%    |
 
 There is no make-up for the homeworks. If you miss any of the homework deadline because of an emergency, do contact me to make an arrangement as soon as you can.
