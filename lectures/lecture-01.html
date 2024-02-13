@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Atabey Kaygun">
+  <title>Math 381E</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/solarized.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Math 381E</h1>
+  <p class="author">Atabey Kaygun</p>
+  <p class="date">Tuesday, February 13, 2024</p>
+</section>
+
+<section>
+<section id="welcome-to-mat388e" class="title-slide slide level2">
+<h2>Welcome to MAT388E</h2>
+
+</section>
+<section id="data-science-for-fundamental-sciences"
+class="slide level3">
+<h3>Data Science for Fundamental Sciences</h3>
+</section>
+<section id="focus" class="slide level3">
+<h3>Focus</h3>
+<p>A <em>hands-on</em> practical introduction to machine learning
+algorithms.</p>
+<ul>
+<li>supervised and unsupervised learning,</li>
+<li>validation and error analysis,</li>
+<li>clustering and classification algorithms,</li>
+<li>regression algorithms,</li>
+<li>neural networks and related subjects.</li>
+</ul>
+</section>
+<section id="objectives" class="slide level3">
+<h3>Objectives</h3>
+<ul>
+<li>to understand the fundamental concepts and algorithms</li>
+<li>to learn use cases of supervised and unsupervised algos</li>
+<li>to gain practical know-how on basic ML algorithms</li>
+<li>to learn how to apply ML algorithms to problems</li>
+<li>to learn how to analyze results</li>
+</ul>
+</section>
+<section id="who-am-i" class="slide level3">
+<h3>Who am I?</h3>
+<p>Originally theoretical math (algebra) turned data analyst by
+demand</p>
+<ul>
+<li>statical data analysis</li>
+<li>time series analysis</li>
+<li>text analysis</li>
+<li>topological data analysis</li>
+</ul>
+</section></section>
+<section>
+<section id="syllabus-and-assessment" class="title-slide slide level2">
+<h2>Syllabus and Assessment</h2>
+
+</section>
+<section id="overview-of-the-syllabus" class="slide level3">
+<h3>Overview of the Syllabus</h3>
+</section>
+<section id="assessment" class="slide level3">
+<h3>Assessment</h3>
+<ul>
+<li>4 homework projects</li>
+<li>final proposal (1500 words)</li>
+<li>final project (5000 words)</li>
+</ul>
+</section>
+<section id="the-final-proposal" class="slide level3">
+<h3>The Final Proposal</h3>
+<ul>
+<li>dataset(s) with detailed description</li>
+<li>questions you ask the dataset(s)</li>
+<li>methods you are going to use</li>
+<li>list of team members</li>
+<li>division of labor (who will do what)</li>
+</ul>
+</section>
+<section id="the-final-project" class="slide level3">
+<h3>The Final Project</h3>
+<ul>
+<li>dataset(s)</li>
+<li>hardware and software</li>
+<li>question(s)</li>
+<li>methods to extract answers from the dataset(s)</li>
+<li>obstacles and solutions</li>
+<li>analysis (what, why, how)</li>
+<li>workload breakdown (who, what, how much work)</li>
+</ul>
+</section>
+<section id="use-of-llms" class="slide level3">
+<h3>Use of LLMs</h3>
+<p>I allow and even encourage students to large language models
+(ChatGPT, Claude2, LLAMA2 etc).</p>
+<p>Your required to document the usage through logged transcripts.</p>
+<p>Transparency and maintaining academic integrity.</p>
+</section></section>
+<section>
+<section id="the-tools" class="title-slide slide level2">
+<h2>The Tools</h2>
+
+</section>
+<section id="python" class="slide level3">
+<h3>Python</h3>
+<ul>
+<li>Popular open source programming language</li>
+<li>Flexible language good for beginners</li>
+<li>Widely used in industry and research</li>
+<li>Many libraries for data analysis
+<ul>
+<li>Pandas,</li>
+<li>Numpy,</li>
+<li>Scikit-Learn etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="jupyter-notebooks" class="slide level3">
+<h3>Jupyter Notebooks</h3>
+<p>Notebooks are ideal for constructing a coherent narrative analysis of
+data because</p>
+<ul>
+<li>Interactive</li>
+<li>Versatile (many languages) <a
+href="https://julialang.org/">JU</a>(lia)<a
+href="https://www.python.org/">PYT</a>(hon)e<a
+href="https://www.r-project.org/">R</a></li>
+<li>Supports code, text, and visualization in the same context</li>
+</ul>
+</section>
+<section id="package-managers" class="slide level3">
+<h3>Package Managers</h3>
+<p>Package manager manages the libraries installed on your system:</p>
+<ul>
+<li><a href="https://docs.conda.io/en/latest/">anaconda</a></li>
+<li><a href="https://pypi.org/project/pip/">pip</a></li>
+</ul>
+</section>
+<section id="online-compute-platforms" class="slide level3">
+<h3>Online Compute Platforms</h3>
+<ul>
+<li><a href="https://cocalc.com/">CoCalc</a></li>
+<li><a href="https://colab.research.google.com/">Google Colab</a></li>
+<li><a
+href="https://visualstudio.microsoft.com/vs/features/notebooks-at-microsoft/">Microsoft
+Azure Notebooks</a></li>
+<li><a href="https://www.kaggle.com/">Kaggle</a></li>
+</ul>
+</section>
+<section id="git" class="slide level3">
+<h3>Git</h3>
+<p>Git is a version control system. <a
+href="https://github.com/crc8/GitVersionTree">(Image source)</a></p>
+<p><img src="../images/git-branches-merge.png" height="450"></p>
+</section>
+<section id="github" class="slide level3">
+<h3>GitHub</h3>
+<p>GitHub is a sharing platform. <a
+href="https://support.nesi.org.nz/hc/en-gb/articles/360001508515-Git-Reference-Sheet">(Image
+source)</a></p>
+<p><img data-src="../images/git.svg" /></p>
+</section>
+<section id="markdown" class="slide level3">
+<h3>Markdown</h3>
+<p><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> is a
+markup language like HTML, but <a
+href="https://www.markdownguide.org/cheat-sheet/">much simpler</a>.</p>
+</section></section>
+<section>
+<section id="data-science" class="title-slide slide level2">
+<h2>Data Science</h2>
+
+</section>
+<section id="what-is-data" class="slide level3">
+<h3>What is Data?</h3>
+<p>Any collection of symbols can be data as long as they are</p>
+<ul>
+<li>recorded consistently</li>
+<li>collected within the same context</li>
+<li>recalled consistently and accurately</li>
+</ul>
+</section>
+<section id="what-is-data-science" class="slide level3">
+<h3>What is Data Science?</h3>
+<ul>
+<li>interdisciplinary field</li>
+<li>extracts insights from data</li>
+<li>by fitting models on data</li>
+</ul>
+</section>
+<section id="data-science-workflow" class="slide level3">
+<h3>Data Science Workflow</h3>
+<p><img src="../images/datascience-workflow.png" height="400"></p>
+</section>
+<section id="analysis-workflow" class="slide level3">
+<h3>Analysis Workflow</h3>
+<ol type="1">
+<li>Look at the data, clean it, understand it.</li>
+<li>Put forth a hypothesis.</li>
+<li>Design a question to test the hypothesis.</li>
+<li>Choose a model type.</li>
+<li>Design a fit function.</li>
+<li>Find the best fitting model parameters.</li>
+<li>Validate the model using the fit function.</li>
+<li>If necessary go back to step 2, 3 or 4.</li>
+<li>Write a report.</li>
+</ol>
+</section>
+<section id="how-is-it-different-than-science" class="slide level3">
+<h3>How is it different than Science?</h3>
+<p>In any science we do the same.</p>
+<ul>
+<li>Our domain is fixed.</li>
+<li>We need deep domain knowledge.</li>
+<li>Our models are specific to that particular domain.</li>
+</ul>
+</section>
+<section id="how-is-data-analysis-different-than-science"
+class="slide level3">
+<h3>How is Data Analysis different than Science?</h3>
+<ul>
+<li><p>Data Analysis models use</p>
+<ul>
+<li>internal structure of the data</li>
+<li>are domain agnostic</li>
+</ul></li>
+<li><p>Developing these models requires</p>
+<ul>
+<li>statistical</li>
+<li>mathematical</li>
+<li>computational skills</li>
+</ul></li>
+</ul>
+</section>
+<section id="do-we-need-all-of-this-to-do-data-analysis"
+class="slide level3">
+<h3>Do we need all of this to do Data Analysis?</h3>
+<ul>
+<li>No code no compute!</li>
+<li>No statistics no certainity!</li>
+<li>No mathematics no maintanence!</li>
+</ul>
+<figure>
+<img data-src="../images/whac-a-mole.gif" alt="I fixed it!" />
+<figcaption aria-hidden="true">I fixed it!</figcaption>
+</figure>
+</section>
+<section id="can-anyone-do-data-analysis-without-domain-knowledge"
+class="slide level3">
+<h3>Can anyone do Data Analysis without domain knowledge?</h3>
+<p>Any fool can develop a model! (coding)</p>
+<p><img data-src="../images/200w.gif" /></p>
+</section>
+<section id="can-anyone-do-data-analysis-without-domain-knowledge-1"
+class="slide level3">
+<h3>Can anyone do Data Analysis without domain knowledge?</h3>
+<p>It is difficult to see/decide if</p>
+<ul>
+<li>a model fits (domain knowledge)</li>
+<li>when/where model stops working (math/stats)</li>
+<li>fixing a model when it breaks (math)</li>
+</ul>
+</section>
+<section id="what-does-a-model-do" class="slide level3">
+<h3>What does a model do?</h3>
+<ul>
+<li>Models can be
+<ul>
+<li>predictive</li>
+<li>or descriptive.</li>
+</ul></li>
+</ul>
+</section>
+<section id="why-models" class="slide level3">
+<h3>Why Models?</h3>
+<blockquote>
+<p>“All models are wrong, but some are useful.” George Box</p>
+</blockquote>
+<ul>
+<li>Data is usually noisy, complex and hard to understand.</li>
+<li>Model is an artificial construct.</li>
+<li>Model is a simplification.</li>
+</ul>
+</section></section>
+<section>
+<section id="applications" class="title-slide slide level2">
+<h2>Applications</h2>
+
+</section>
+<section id="examples" class="slide level3">
+<h3>Examples</h3>
+<ul>
+<li>Use of data science in academia</li>
+<li>Movie recommendations on Netflix</li>
+<li>Targeted ads on social media</li>
+<li>Predictive maintenance for manufacturing</li>
+</ul>
+</section>
+<section id="a-hands-on-example" class="slide level3">
+<h3>A Hands On Example</h3>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'convex',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
