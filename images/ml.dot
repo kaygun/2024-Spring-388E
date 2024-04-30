@@ -1,0 +1,21 @@
+digraph G {
+	"MACHINE LEARNING" -> "Unsupervised Learning";
+	"MACHINE LEARNING" -> "Supervised Learning";
+	"MACHINE LEARNING" -> "Reinforcement Learning";
+	"MACHINE LEARNING" -> "Neural Network Methods";
+	"MACHINE LEARNING" -> "Ensemble Learning";
+
+	"Supervised Learning" -> "Regression" -> { "OLS Regression", "Locally Constant Regression" };
+        "OLS Regression" -> "Regularized Regression";
+        "Locally Constant Regression" -> { "Decision Tree Regression", "Support Vector Regression" }
+	"Supervised Learning" -> "Classification" -> { "KNN", "Logistic Regression", "SVM", "Decision Trees" }
+	
+	"Unsupervised Learning" -> "Clustering" -> { "K-Means", "Hiearchical Clustering", "DBSCAN" }
+
+	"Ensemble Learning" -> "Bagging" -> "Random Forest";
+	"Ensemble Learning" -> "Boosting" -> { "AdaBoost", "XGBoost", "LightGBM" }
+
+	"Neural Network Methods" -> { "Logistic Regression", "Autoencoders", "Graph Computing" };
+	"Neural Network Methods" -> "Time Series Methods" -> { "RNN", "CNN" }
+	"Neural Network Methods" -> "Image Processing" -> { "CNN" }
+}
